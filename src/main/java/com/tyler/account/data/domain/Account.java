@@ -20,11 +20,10 @@ public class Account {
 	public Account() {
 	}
 
-	public Account(String firstName, String lastName, Prize prize) {
+	public Account(String firstName, String lastName) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.prize = prize;
 	}
 
 	public String getFirstName() {

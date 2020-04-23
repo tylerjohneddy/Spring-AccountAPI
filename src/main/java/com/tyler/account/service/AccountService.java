@@ -20,6 +20,8 @@ public class AccountService {
 	}
 
 	public Account create(Account account) {
+		account = numGen.getRandomAccount(account);
+		account = prize.decidePrize(account);
 		return this.repo.save(account);
 	}
 
